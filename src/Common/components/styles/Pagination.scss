@@ -1,0 +1,13 @@
+.Pagination-root {
+
+  .page-item {
+    cursor: pointer;
+  }
+
+  &.fetch-load {
+    opacity: 0.5;
+    .page-item {
+      cursor: no-drop;
+    }
+  }
+}

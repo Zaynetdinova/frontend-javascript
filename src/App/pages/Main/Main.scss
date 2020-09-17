@@ -1,0 +1,40 @@
+.Main {
+
+  .title {
+    margin: 24px 0;
+  }
+
+  .search-form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .search-wrapper {
+    width: 600px;
+
+    .input-search {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .content-wrapper-user {
+      width: 70%;
+    }
+
+    .content-wrapper-user-view {
+      width: 25%;
+    }
+  }
+
+  .pagination {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

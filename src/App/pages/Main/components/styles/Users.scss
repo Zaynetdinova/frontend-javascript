@@ -1,0 +1,83 @@
+.Users {
+  width: 100%;
+  table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+
+    .element-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .arrow {
+        background-image: url("../../../../../Common/assets/img/arrow.svg");
+        background-repeat: no-repeat;
+        height: 12px;
+        width: 12px;
+        opacity: 0;
+        transform: rotate(180deg);
+      }
+
+      &.ID:hover {
+        cursor: pointer;
+        .arrow {
+          opacity: 1;
+        }
+      }
+      &.firstName:hover {
+        cursor: pointer;
+        .arrow {
+          opacity: 1;
+        }
+      }
+      &.lastName:hover {
+        cursor: pointer;
+        .arrow {
+          opacity: 1;
+        }
+      }
+
+      &.active-sort {
+        .arrow {
+          opacity: 1;
+        }
+      }
+
+
+      .arrow-rotate {
+        transform: rotate(0deg);
+      }
+    }
+
+
+    th {
+      padding: 10px;
+      border: 1px solid #A9E2CC;
+    }
+    td {
+      font-size: 0.8em;
+      padding: 5px 7px;
+      border: 1px solid #A9E2CC;
+    }
+
+    .user-container:hover {
+      background: #eeeeee;
+      cursor: pointer;
+    }
+
+    .active-user {
+      background: #eeeeee;
+    }
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+
+
+    div{
+      padding: 12px 0;
+    }
+  }
+}
